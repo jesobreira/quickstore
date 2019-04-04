@@ -1,6 +1,6 @@
 {
-  "name": "quickstore",
-  "version": "1.0.0",
+  "name": "awful-name-thanks-npm",
+  "version": "1.0.1",
   "description": "Node persistent key-value storage which uses Knex and caches using Redis",
   "main": "dist/index.js",
   "scripts": {

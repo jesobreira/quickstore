@@ -5,7 +5,7 @@ Node asynchronous namespaced key-value persistent storage which uses Knex and ca
 ## Install
 
 ```
-npm i quickstore
+npm i awful-name-thanks-npm
 ```
 
 You have to provide a Knex and a Redis instance. Examples:
@@ -26,12 +26,12 @@ var knex = require('knex')({
 var redis = require('redis').createClient()
 ```
 
-Create a quickstore instance:
+Create a quickstorage instance:
 
 ```
-import Quickstore from 'quickstore' // or const Quickstore = require('../dist').default
+import Quickstorage from 'awful-name-thanks-npm' // or const Quickstore = require('awful-name-thanks-npm').default
 
-var qs = new Quickstore({
+var qs = new Quickstorage({
 	knex: knex,
 	redis: redis,
 	mysql: {
@@ -92,3 +92,12 @@ typeof (await qs.get('myNumber')) // "number"
 await qs.set('myObj', { greeting: 'hey' })
 (await qs.get('myObj')).greeeting // "hey"
 ```
+# WTF is wrong with the package name?
+
+For years, NPM mislead users by showing that a package name is available, but at the time of `npm publish`ing the package, it says it is similar to another package (based on rules they keep).
+
+> npm ERR! 403 Forbidden - PUT https://registry.npmjs.org/coolname - Package name too similar to existing packages; try renaming your package to '@yourusername/coolname' and publishing with 'npm publish --access=public' instead
+
+Several issues have been created but NPM never went with a solution. Time goes on, and more packages were created and finding a good name for your package is becoming a difficult task.
+
+And nobody likes to waste time.
