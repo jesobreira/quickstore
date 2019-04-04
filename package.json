@@ -1,0 +1,40 @@
+{
+  "name": "quickstore",
+  "version": "1.0.0",
+  "description": "Node persistent key-value storage which uses Knex and caches using Redis",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "node test/index.js",
+    "build": "babel src -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesobreira/quickstore.git"
+  },
+  "keywords": [
+    "caching",
+    "cache",
+    "redis",
+    "sql",
+    "store",
+    "storage",
+    "keep",
+    "save",
+    "config",
+    "settings",
+    "token"
+  ],
+  "author": "Jefrey S. Santos <jefrey.santos@capitual.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jesobreira/quickstore/issues"
+  },
+  "homepage": "https://github.com/jesobreira/quickstore#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "knex": "^0.16.3",
+    "mysql": "^2.16.0",
+    "redis": "^2.8.0"
+  }
+}
